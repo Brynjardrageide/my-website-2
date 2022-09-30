@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/arbeid.css">
 </head>
 <body>
     <header>
@@ -21,14 +22,47 @@
 
     </header>
     <main>
-        <aside><img src="/img/logo.png" alt="logo"></aside>
+        <aside>
+            <img src="/img/logo.png" alt="logo">
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'Hjem')">informasjon</button>
+                <button class="tablinks" onclick="openTab(event, 'pewdepie')">photo historie</button>
+                <button class="tablinks" onclick="openTab(event, 'games')">netsiden</button>
+              </div>
+        </aside>
+      
         <article>
            
+              <div id="Hjem" class="tabcontent">
+                <!-- infomasjon tab -->
+              <h1>Hjem</h1>
+              <p>hei velkommen Snorre til min nettside.</p>
+                <p>TIP DENNE NETTSIDEN BØR VERE PÅ 150%</p>
+            </div>
+           <div id="pewdepie" class="tabcontent">
+            <p>heiiiiiii</p>
+           </div>
+           <div id="games" class="tabcontent">lolololololool</div>
         </article>
-        
     </main>
     <footer>
         <p>© brynjar bernes drageide</p>
     </footer>
+    <script>
+    function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+    openTab(event, 'Hjem'); 
+    </script>
 </body>
 </html>
