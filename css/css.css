@@ -69,10 +69,7 @@ main {
     min-height: 85%;
 }
 
-main>aside>img {
-    height: 195px;
-    width: 192px;
-}
+
 
 aside,
 article {
@@ -87,12 +84,13 @@ article {
     width: 75%;
 }
 
-/*footer*/
-footer {
-    padding: 15px;
+main>aside>img {
+    height: 195px;
+    width: 192px;
 }
 
-/*other*/
+
+/*man, on comuter*/
 @media only screen and (min-width: 768px) {
     main {
         display: flex;
@@ -114,4 +112,9 @@ body {
 
 main {
     background-color: white;
+}
+
+/*footer*/
+footer {
+    padding: 15px;
 }
