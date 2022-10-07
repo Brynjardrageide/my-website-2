@@ -84,6 +84,8 @@ article {
     width: 75%;
 }
 
+
+
 main>aside>img {
     height: 195px;
     width: 192px;
@@ -98,11 +100,14 @@ main>aside>img {
 
     aside {
         margin-left: 2%;
+        width: 25%;
     }
+
 
     .columns-desktop {
         display: flex;
     }
+
 }
 
 /*bakrund*/
