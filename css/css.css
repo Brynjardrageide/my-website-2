@@ -91,6 +91,9 @@ main>aside>img {
     width: 192px;
 }
 
+.desctop {
+    display: none;
+}
 
 /*man, on comuter*/
 @media only screen and (min-width: 768px) {
@@ -106,6 +109,10 @@ main>aside>img {
 
     .columns-desktop {
         display: flex;
+    }
+
+    .desctop {
+        display: inline;
     }
 
 }
