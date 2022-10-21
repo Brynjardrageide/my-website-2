@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/arbeid.css">
 </head>
 <body>
     <header>
@@ -28,12 +29,14 @@
             <br>
             <div class="tab">
                 <button class="tablinks" onclick="openTab(event, 'Hjem')">Informasjon</button>
-                <button class="tablinks" onclick="openTab(event, 'pewdepie')">Photo historie</button>
-                <button class="tablinks" onclick="openTab(event, 'games')">Netsiden</button>
+                <button class="tablinks" onclick="openTab(event, 'pewdepie')">linjer</button>
+                <button class="tablinks" onclick="openTab(event, 'games')">fun facts</button>
             </div>
         </aside>
         <article>
-            
+            <div id="Hjem" class="tabcontent"></div>
+            <div id="pewdepie" class="tabcontent"></div>
+            <div id="games" class="tabcontent"></div>
         </article>
         
     </main>
@@ -41,5 +44,7 @@
         <p>© brynjar bernes drageide</p>
     </footer>
     <script src="js/js.js"></script>
+        <script>openTab(event, 'Hjem');</script>
+
 </body>
 </html>
