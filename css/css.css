@@ -214,3 +214,16 @@ main {
 footer {
     padding: 15px;
 }
+
+footer {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: #333;
+    padding: 5px;
+    border-radius: 1rem;
+}
+
+footer a {
+    color: white;
+}
