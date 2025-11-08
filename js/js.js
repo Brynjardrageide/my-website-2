@@ -26,3 +26,27 @@ function openTab(evt, tabName) {
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += "active";
 }
+
+// Slideshow functionality for arbeid
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    let i;
+    let slides = document.querySelectorAll("#pewdepie .mySlides");
+    let dots = document.querySelectorAll("#pewdepie .dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    slides.forEach(slide => slide.style.display = "none");
+    dots.forEach(dot => dot.className = dot.className.replace(" active", ""));
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+}

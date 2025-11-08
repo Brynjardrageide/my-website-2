@@ -7,6 +7,7 @@
     <title>arbeid</title>
     <link rel="stylesheet" href="css/arbeid.css">
     <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/slideshow.css">
     <script src="https://kit.fontawesome.com/919481ed45.js" crossorigin="anonymous"></script>
 
 </head>
@@ -72,18 +73,41 @@
                     <p class="subtitle">Imensnetsiden er informasjon om denne netsiden</p>
             </div>
             <!--div med classe tabcontent-->
-           <div id="pewdepie" class="tabcontent">
-                <br>
-                <h2>Photo historie</h2>
-                <br>
-                <br>
-                <p class="subtitle">Som tidliere sakt er photo historie en historie ut i fta fire bilder, gjet historien</p>
-                <br>
-                    <img class="mySlides" src="/img/scene1.png" alt="fyr og hund">
-                    <img class="mySlides" src="/img/scene2.png" alt="hund kjørt over">
-                    <img class="mySlides" src="/img/scene3.png" alt="hevn">
-                    <img class="mySlides" src="/img/scene4.png" alt="ny hund og kos fra fyr">
-           </div>
+<div id="pewdepie" class="tabcontent">
+    <br>
+    <h2>Photo historie</h2>
+    <br>
+    <p class="subtitle">Som tidliere sakt er photo historie en historie ut i fta fire bilder, gjet historien</p>
+    <br>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="/img/scene1.png" alt="fyr og hund">
+        </div>
+        <div class="mySlides fade">
+            <img src="/img/scene2.png" alt="hund kjørt over">
+        </div>
+        <div class="mySlides fade">
+            <img src="/img/scene3.png" alt="hevn">
+        </div>
+        <div class="mySlides fade">
+            <img src="/img/scene4.png" alt="ny hund og kos fra fyr">
+        </div>
+
+        <!-- Arrows -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <!-- Dots / indicators -->
+    <div style="text-align:center; margin-top: 10px;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+</div>
+
            <!--div med classe tabcontent-->
            <div id="games" class="tabcontent">
                 <h2>Netsiden</h2>
